@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AGMarknet</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+		
+		h3.example {
+			text-align: center;
+			margin-top: 50px;
+			color: #4CAF50;
+		}
+		form.example {
+			background-color: #fff;
+			padding: 20px;
+			margin: 0 auto;
+			max-width: 500px;
+			box-shadow: 0 0 10px orange;
+		}
+		label.example {
+			display: block;
+			margin-bottom: 5px;
+			color: #333;
+		}
+		/*input.example[type=text], input[type=tel] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+		input.example[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		input.example[type=submit]:hover {
+			background-color: #45a049;
+		}*/
+
+		.wrapper {
+    display: flex; /* This will make the child divs align side by side */
+    justify-content: space-between; /* This will add equal margins between the child divs */
+    align-items: flex-start;
+	margin: 0 auto; /* This will center the wrapper div on the page */
+    max-width: 960px; /* This will limit the maximum width of the wrapper div */
+  }
+  
+  .content {
+	margin-top: 50px;
+
+    width: 45%; /* This will set the width of each content div */
+    padding: 30px; /* This will add padding to the content div */
+    box-sizing: border-box; /* This will make sure the padding is included in the width of the div */
+    box-shadow: 0 0 10px orange; /* This will set a background color for the content div */
+
+  }
+
+/*  
+  .table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid;
+}
+
+.th, td {
+  border: 1px solid black;
+  text-align: left;
+  border: 1px solid;
+  padding: 15px;
+  text-align: left;
+  
+}
+
+
+
+
+
+
+tr:hover {background-color:orange;}*/
+
+input.example[type="text"],
+input.example[type="email"],
+input.example[type="tel"],
+input.example[type="password"] {
+  width: 320px; /* Change this value to adjust the input field width */
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input.example[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-items: center;
+}
+
+input.example[type="submit"]:hover {
+  background-color: #3e8e41;
+ 
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 10px orange;
+}
+
+#customers td, #customers th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color:black;
+}
+
+
+.required {
+  color: red;
+}
+
+
+	</style>
+   
+</head>
+
+<body>
+    <!-- Topbar Start -->
+
+        <!-- Back to Top -->
+   
+
+
+     
+        <div class="container-fluid px-5 d-none d-lg-block">
+            <div class="row gx-5 py-3 align-items-center">
+                <div class="col-lg-3">
+                    <div class="d-flex align-items-center justify-content-start">
+                       <!-- <i class="bi bi-phone-vibrate fs-1 text-primary me-2"></i>-->
+                       <!--- <h2 class="mb-0">AGMarknet</h2>-->
+                        <img src="img/th.jpeg" alt="Image" style="width:80px;height:60px;">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="index.html" class="navbar-brand ms-lg-5">
+                            <h1 class="m-0 display-6 text-primary"><Fresh class="text-secondary">AGMarknet</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a class="btn btn-primary btn-square rounded-circle me-2" href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary btn-square rounded-circle me-2" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary btn-square rounded-circle me-2" href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-primary btn-square rounded-circle" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!---
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center justify-content-start">
+                    <select name="ddlLanguages" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlLanguages\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlLanguages">
+                        <option selected="selected" value="en">English</option>
+                        <option value="hi-IN">हिंदी</option>
+                        <option value="hi-IN">मराठी</option>
+                        <option value="hi-IN">तमिळ</option>
+                        <option value="hi-IN">गुजराथी</option>
+                        <option value="hi-IN">अरबी</option>
+                        <option value="hi-IN">तेलुगु</option>
+                    
+                    </select>
+                
+                </div>
+            -->
+            </div>
+        </div>
+        </div>
+        <!-- Topbar End -->
+    
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
+    <a href="index.html" class="navbar-brand d-flex d-lg-none">
+        <h1 class="m-0 display-4 text-secondary"><class="text-white">Agmarknet></h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="National Bulletin.html" class="nav-item nav-link">National Bulletin</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+           <!--- <a href="" class="nav-item nav-link">Mobile App</a>-->
+            
+          <!---  <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">AGMarknet Projects</a>
+                <div class="dropdown-menu m-0">
+                    <a href="blog.html" class="dropdown-item">Operational Guidelines</a>
+                    <a href="detail.html" class="dropdown-item">Markets Covered</a>
+                    <a href="feature.html" class="dropdown-item">Commodities List</a>
+                    <a href="team.html" class="dropdown-item">Co-ordinators list</a>
+                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                </div>
+            </div>-->
+
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Features</a>
+                <div class="dropdown-menu m-0">
+                    <a href="commodity.html" class="dropdown-item"><u>Commodities List</u></a>
+                    <!--<a href="Price_trend.html" class="dropdown-item"><u>Price Trends</u></a>-->
+                    <a href="Markets_Covered.html" class="dropdown-item"><u>Covered</u></a>
+                    
+                </div>
+            </div>
+
+            <!--<div class="nav-item nav-link">
+                <form action="#">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            -->
+            <!--<div class="nav-item nav-link">
+                <form action="#">
+                    <input type="text"
+                        placeholder=" Search Bar"
+                        name="search">
+                    <button>
+                        <i class="fa fa-search"
+                            style="font-size: 18px;">
+                        </i><div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">English</a>
+                <div class="dropdown-menu m-0">-->
+                   
+                       <!--<option value="hi-IN">हिंदी</option>
+                        <option value="hi-IN">मराठी</option>
+                        <option value="hi-IN">तमिळ</option>
+                        <option value="hi-IN">गुजराथी</option>
+                        <option value="hi-IN">अरबी</option>
+                        <option value="hi-IN">तेलुगु</option>-->
+                        
+                        <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">English</a>
+                          <div class="dropdown-menu m-0">
+                             
+                                 <!---<option value="hi-IN">हिंदी</option>
+                                  <option value="hi-IN">मराठी</option>
+                                  <option value="hi-IN">तमिळ</option>
+                                  <option value="hi-IN">गुजराथी</option>
+                                  <option value="hi-IN">अरबी</option>
+                                  <option value="hi-IN">तेलुगु</option>-->
+                                  
+                                  <a class="dropdown-item"><u>हिंदी</u></a>
+                                  <a class="dropdown-item"><u>मराठी</u></a>
+                                  <a class="dropdown-item"><u>तमिळ</u></a>
+                                  <a class="dropdown-item"><u>गुजराथी</u></a>
+                                  <a class="dropdown-item"><u>अरबी</u></a>
+                                  <a class="dropdown-item"><u>तेलुगु</u></a>
+      
+                                  
+                              
+                            
+                          </div>
+                      </div>
+
+                        
+                    
+                  
+                </div>
+            </div>
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<h5 style="text-align: center;margin-top: 50px;color: red;" >NOTE: SMS are provided to registered users for 3 mandies and 3 crops of their choice through m-Kisan portal.</h5>
+	
+<div class="wrapper">
+	
+	<div class="content"  >
+	  <!-- Content of the first div goes here -->
+	  
+		<h3 class="example">SMS REGISTRATION FORM</h3>
+
+		&nbsp;
+	
+		<div class="Example"style="font-family: Arial, sans-serif;margin: 0;padding: 0;">
+	
+
+			<form class="example">
+                <label class="example" for="name">Name<span class="required">*</span>:</label>
+                <input class="example" type="text" id="name" name="name" placeholder="Sushil Jadhav" pattern="Sushil Jadhav" required>
+                
+                &nbsp;
+                <label class="example" for="email">Email<span class="required">*</span>:</label>
+                <input class="example" type="email" id="email" name="email" placeholder="sjadhav@example.com" required>
+          
+                &nbsp;
+                <label class="example" for="phone">Phone<span class="required">*</span>:</label>
+                <input class="example" type="tel" id="phone" name="phone" placeholder="+91-123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                
+                &nbsp;
+                <label class="example" for="password">Password<span class="required">*</span>:</label>
+                <input class="example" type="password" id="password" name="password" required>
+                
+                &nbsp;
+                <input class="example" type="submit" value="Submit">
+              </form>
+              
+			  
+</div>
+</div>
+	<div class="content" >
+	  <!-- Content of the second div goes here -->
+	  <h3 class="example">USERS REGISTERED UNDER AGMARKNET</h3>
+
+	 &nbsp;
+	  <table id="customers">
+		<thead>
+		  <tr>
+			<th>Sr No.</th>
+			<th>State/Agency</th>
+			<th>AGMarknet(No Of Registered Users)</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>1</td>
+			<td>Andhra Pradesh</td>
+			<td>1346</td>
+			
+			
+		  </tr>
+		  <tr>
+			<td>2</td>
+			<td>Assam</td>
+			<td>6</td>
+		  </tr>
+		  <tr>
+			<td>3</td>
+			<td>Bihar</td>
+			<td>71</td>
+		  </tr>
+		  <tr>
+			<td>4</td>
+			<td>Chattisgarh</td>
+			<td>219</td>
+		  </tr>
+		  <tr>
+			<td>5</td>
+			<td>Gujarat</td>
+			<td>580</td>
+		  </tr>
+		  <tr>
+			<td>6</td>
+			<td>Haryana</td>
+			<td>297</td>
+		  </tr>
+		  <tr>
+			<td>7</td>
+			<td>Himachal Pradesh</td>
+			<td>27</td>
+		  </tr>
+		  <tr>
+			<td>8</td>
+			<td>Jammu Kashmir</td>
+			<td>14</td>
+		  </tr>
+		  <tr>
+			<td>9</td>
+			<td>Jharkhand</td>
+			<td>10</td>
+		  </tr>
+		  <tr>
+			<td>10</td>
+			<td>Karnataka</td>
+			<td>756</td>
+		  </tr>
+		  <tr>
+			<td>11</td>
+			<td>Kerala</td>
+			<td>85</td>
+		  </tr>
+		  <tr>
+			<td>12</td>
+			<td>Madhya Pradesh</td>
+			<td>431</td>
+		  </tr>
+		  <tr>
+			<td>13</td>
+			<td>Maharashtra</td>
+			<td>2676</td>
+		  </tr>
+		  <tr>
+			<td>14</td>
+			<td>Meghalaya</td>
+			<td>-</td>
+		  </tr>
+		  <tr>
+			<td>15</td>
+			<td>Nagaland</td>
+			<td>1</td>
+		  </tr>
+		  <tr>
+			<td>16</td>
+			<td>Odisha</td>
+			<td>85</td>
+		  </tr>
+		  <tr>
+			<td>17</td>
+			<td>Punjab</td>
+			<td>1214</td>
+		  </tr>
+		  <tr>
+			<td>18</td>
+			<td>Rajasthan</td>
+			<td>279</td>
+		  </tr>
+		  <tr>
+			<td>19</td>
+			<td>Tamil Nadu</td>
+			<td>1123</td>
+		  </tr>
+		  <tr>
+			<td>20</td>
+			<td>Telangana</td>
+			<td>202</td>
+		  </tr>
+
+		  <!-- ... and so on for the remaining rows -->
+		</tbody>
+	  </table>
+	  
+	</div>
+  </div>
+  
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-footer bg-primary text-white mt-5">
+  <div class="container">
+      <div class="row gx-5">
+          <div class="col-lg-8 col-md-6">
+              <div class="row gx-5">
+                  <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                      <h4 class="text-white mb-4">Get In Touch</h4>
+                      <div class="d-flex mb-2">
+                          <i class="bi bi-geo-alt text-white me-2"></i>
+                          <p class="text-white mb-0">Dehu Phata Alandi, Pune, India</p>
+                      </div>
+                      <div class="d-flex mb-2">
+                          <i class="bi bi-envelope-open text-white me-2"></i>
+                          <p class="text-white mb-0">AGMarknet@nic.in</p>
+                      </div>
+                      <div class="d-flex mb-2">
+                          <i class="bi bi-telephone text-white me-2"></i>
+                          <p class="text-white mb-0">+022 2545 9899</p>
+                      </div>
+                      <div class="d-flex mt-4">
+                          <a class="btn btn-secondary btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-secondary btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-secondary btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                          <a class="btn btn-secondary btn-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                      <h4 class="text-white mb-4">Quick Links</h4>
+                      <div class="d-flex flex-column justify-content-start">
+                          <a class="text-white mb-2" href="index.html"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                          <a class="text-white mb-2" href="National Bulletin.html"><i class="bi bi-arrow-right text-white me-2"></i>National Bulletin</a>
+                          <a class="text-white mb-2" href="service.html"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                          <a class="text-white" href="Feedback.html"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-lg-n5">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-secondary p-5">
+                  <h4 class="text-white">Newsletter</h4>
+                  <h6 class="text-white">Subscribe Our Newsletter</h6>
+                  <p>To Get The Latest Agriculture Marketing Related Updates.</p>
+                  <form action="">
+                      <div class="input-group">
+                          <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                          <button class="btn btn-primary">Sign Up</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid bg-dark text-white py-4">
+  <div class="container text-center">
+      <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="https://freewebsitecode.com/">AGMarknet</a>. All Rights Reserved.<a class="text-secondary fw-bold" href="https://freewebsitecode.com"></a></p>
+  </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-secondary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
